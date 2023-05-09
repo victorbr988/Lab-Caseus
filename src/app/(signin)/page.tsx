@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react"
 import { FiEye, FiEyeOff, FiLogIn, FiMail } from "react-icons/fi"
 
-export default function Login() {
+export default function Home() {
   const [isVisiblepassword, setVisibePassword] = useState<boolean>(false)
 
   function replaceVisibleInput() {

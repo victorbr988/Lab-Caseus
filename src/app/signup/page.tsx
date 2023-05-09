@@ -37,7 +37,7 @@ export default function Login() {
               <FiLogIn className="text-lg" />
             </Button>
 
-            <Link href="/signin" className="text-gray-600">
+            <Link href="/" className="text-gray-600">
               Voltar ao login
             </Link>
           </section>
