@@ -32,13 +32,13 @@ export default function HomeApp() {
               <h2 className="text-lg">Boletos</h2>
             </Sidebar.Navigator>
 
-            <Sidebar.Navigator route="/signin">
+            <Sidebar.Navigator route="/">
               <FiActivity className="text-2xl" />
               <h2 className="text-lg">Métricas</h2>
             </Sidebar.Navigator>
           </Sidebar.Box>
 
-          <Link href="/signin" className="flex gap-2 absolute bottom-8 px-4 py-3 w-60 rounded cursor-pointer hover:bg-gray-950 hover:text-gray-100 transition-colors ">
+          <Link href="/" className="flex gap-2 absolute bottom-8 px-4 py-3 w-60 rounded cursor-pointer hover:bg-gray-950 hover:text-gray-100 transition-colors ">
             <FiLogOut className="text-2xl" />
             <h2 className="text-lg">Sair</h2>
           </Link>
