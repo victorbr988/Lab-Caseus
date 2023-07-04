@@ -4,7 +4,8 @@ import labLogo from "../../public/lab.png"
 
 interface RootFormProps {
   children: ReactNode;
-  title: string
+  title: string;
+  onClick?: () => void;
 }
 function RootForm({ children, title }: RootFormProps) {
   return (

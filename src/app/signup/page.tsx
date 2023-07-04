@@ -3,11 +3,10 @@ import { Button } from "@/components/Button";
 import { Form } from "@/components/Form"
 import Link from "next/link";
 import { useState } from "react"
-import { FiEye, FiEyeOff, FiLogIn, FiMail } from "react-icons/fi"
+import { FiEye, FiEyeOff, FiMail, FiLogIn } from "react-icons/fi"
 
 export default function Login() {
   const [isVisiblepassword, setVisibePassword] = useState<boolean>(false)
-
   function replaceVisibleInput() {
     setVisibePassword((currentState) => !currentState)
   }
@@ -30,13 +29,13 @@ export default function Login() {
               }
             </button>
           </Form.Label>
-
           <section className="flex w-full mt-6 justify-between items-center">
-            <Button>
+          <Button type="button" >
+              <Link href={'/'}>
               <span className="text-white">Entrar</span>
+              </Link>
               <FiLogIn className="text-lg" />
             </Button>
-
             <Link href="/" className="text-gray-600">
               Voltar ao login
             </Link>
